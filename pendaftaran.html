@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+</head>
+<body>
+
+    <h1>FORM PENDAFTARAN MAHASISWA BARU</h1>
+    <hr>
+
+    <!-- Navigasi -->
+    <a href="index.html">Beranda</a> |
+    <a href="profil.html">Profil Kampus</a> |
+    <a href="pendaftaran.html">Pendaftaran</a>
+
+    <hr>
+
+    <!-- Form Pendaftaran -->
+    <form method="post" action="proses_daftar.html">
+
+        <p>
+            NIK<br>
+            <input type="text" name="nik" required>
+        </p>
+
+        <p>
+            NIM (Opsional jika belum ada)<br>
+            <input type="text" name="nim">
+        </p>
+
+        <p>
+            Nama Lengkap<br>
+            <input type="text" name="nama" required>
+        </p>
+
+        <p>
+            Jenis Kelamin<br>
+            <select name="jk" required>
+                <option value="">-- Pilih --</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+        </p>
+
+        <p>
+            Tempat Lahir<br>
+            <input type="text" name="tempat_lahir" required>
+        </p>
+
+        <p>
+            Tanggal Lahir<br>
+            <input type="date" name="tanggal_lahir" required>
+        </p>
+
+        <p>
+            Alamat<br>
+            <textarea name="alamat" rows="4" cols="40" required></textarea>
+        </p>
+
+        <p>
+            No. HP / WhatsApp<br>
+            <input type="text" name="nohp" required>
+        </p>
+
+        <p>
+            Email<br>
+            <input type="email" name="email">
+        </p>
+
+        <p>
+            Asal Sekolah<br>
+            <input type="text" name="asal_sekolah" required>
+        </p>
+
+        <p>
+            Program Studi Pilihan<br>
+            <select name="prodi" required>
+                <option value="">-- Pilih Prodi --</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Teknologi Informasi">Teknologi Informasi</option>
+                <option value="Manajemen">Manajemen</option>
+            </select>
+        </p>
+
+        <p>
+            Username<br>
+            <input type="text" name="username" required>
+        </p>
+
+        <p>
+            Password<br>
+            <input type="password" name="password" required>
+        </p>
+
+        <p>
+            <button type="submit">Kirim Pendaftaran</button>
+            <button type="reset">Reset</button>
+        </p>
+
+    </form>
+
+    <hr>
+    <p>© 2025 Sistem Pendaftaran Mahasiswa</p>
+
+</body>
+</html>
